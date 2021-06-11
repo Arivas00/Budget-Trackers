@@ -1,6 +1,3 @@
-const CACHE_NAME = "website-cache-v1";
-const DATA_CACHE_ = "data-cache-v1";
-
 const FILES_TO_CACHE = [
     "/",
     "/index.js",
@@ -10,6 +7,9 @@ const FILES_TO_CACHE = [
     "/icons/icon-192x192.png",
     "/icons/icon-512x512.png"
 ];
+
+const CACHE_NAME = "website-cache-v1";
+const DATA_CACHE = "data-cache-v1";
 
 self.addEventListener("install", function (event) {
     event.waitUntil(
